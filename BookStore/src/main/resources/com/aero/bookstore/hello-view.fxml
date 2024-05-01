@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<!--<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aero.bookstore.Hello-->
+<GridPane alignment="CENTER" minWidth="-Infinity"
+          xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aero.bookstore.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="welcomeText" text="Aero Book Store" textFill="#bc1c1c" GridPane.columnIndex="1" GridPane.rowIndex="0">
+      <font>
+         <Font name="System Bold" size="48.0" />
+      </font></Label>
+
+   <Label text="Book Title" GridPane.columnIndex="1" GridPane.rowIndex="1">
+      <font>
+         <Font size="24.0" />
+      </font>
+   </Label>
+
+   <TextField fx:id="tfBookTitle" promptText="Enter book title"  GridPane.columnIndex="2" GridPane.rowIndex="1">
+      <font>
+         <Font size="24.0" />
+      </font>
+   </TextField>
+
+    <Label text="Author"  GridPane.columnIndex="1" GridPane.rowIndex="2">
+        <font>
+            <Font size="24.0" />
+        </font>
+    </Label>
+
+    <ComboBox fx:id="cmbAuthors"   GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+
+    <Label text="Genre"  GridPane.columnIndex="1" GridPane.rowIndex="3">
+        <font>
+            <Font size="24.0" />
+        </font>
+    </Label>
+
+    <RadioButton fx:id="rdbFiction" mnemonicParsing="false" selected="true" text="Fiction"  GridPane.columnIndex="2" GridPane.rowIndex="3">
+      <font>
+         <Font size="24.0" />
+      </font></RadioButton>
+
+    <RadioButton fx:id="rdbNonFiction" mnemonicParsing="false" text="Non-Fiction"  GridPane.columnIndex="3" GridPane.rowIndex="3">
+        <font>
+            <Font size="24.0" />
+        </font></RadioButton>
+
+    <RadioButton fx:id="rdbChildren" mnemonicParsing="false" text="Children"  GridPane.columnIndex="2" GridPane.rowIndex="4">
+        <font>
+            <Font size="24.0" />
+        </font></RadioButton>
+
+    <RadioButton fx:id="rdbBiography" mnemonicParsing="false" text="Biography"  GridPane.columnIndex="3" GridPane.rowIndex="4">
+        <font>
+            <Font size="24.0" />
+        </font></RadioButton>
+
+    <Label text="Price"  GridPane.columnIndex="1" GridPane.rowIndex="5">
+        <font>
+            <Font size="24.0" />
+        </font>
+    </Label>
+
+    <TextField fx:id="tfPrice" promptText="Enter book price"  GridPane.columnIndex="2" GridPane.rowIndex="5">
+        <font>
+            <Font size="24.0" />
+        </font>
+    </TextField>
+
+    <Button onAction="#onSaveBookClick" text="Save Book Info"  GridPane.columnIndex="2" GridPane.rowIndex="6">
+      <font>
+         <Font size="24.0" />
+      </font></Button>
+
+    <Label fx:id="lblOutput" text="Output will be displayed here ! "  GridPane.columnIndex="1" GridPane.rowIndex="8">
+        <font>
+            <Font size="24.0" />
+        </font>
+    </Label>
+
+</GridPane>
